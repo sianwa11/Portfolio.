@@ -94,6 +94,20 @@ body {
   box-sizing: border-box;
   padding: 3rem; }
 
+.card {
+  padding: 2rem;
+  background-color: var(--color-primary-light);
+  border-radius: 4px;
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .card__photo {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%; }
+
 .composition {
   display: inline-flex;
   flex-direction: row;
@@ -155,4 +169,7 @@ body {
 
 .section-about {
   background-color: var(color-primary);
+  padding: 12rem 0; }
+
+.section-projects {
   padding: 12rem 0; }
