@@ -5,8 +5,11 @@
 @import "base/animations";
 @import "base/base";
 
+@import "components/bubble";
+@import "components/button";
 @import "components/card";
 @import "components/composition";
+@import "components/timeline";
 
 @import "layout/grid";
 @import "layout/header";

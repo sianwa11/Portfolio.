@@ -18,7 +18,7 @@ body {
   align-self: center;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 3rem;
+  // margin-bottom: 3rem;
 
   &--main {
     font-size: 3rem;
@@ -80,5 +80,9 @@ body {
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  &--small {
+    font-size: 1.4rem;
   }
 }
