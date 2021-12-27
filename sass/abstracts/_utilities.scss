@@ -11,17 +11,21 @@
 }
 
 .u-flex-start {
-  align-self: flex-start;
+  align-self: flex-start !important;
 }
 
 .u-flex-end {
-  align-self: flex-end;
+  align-self: flex-end !important;
 }
 
 .u-margin-left {
-  margin-left: 9rem;
+  margin-left: 9rem !important;
 }
 
 .u-margin-right {
-  margin-right: 9rem;
+  margin-right: 9rem !important;
+}
+
+.u-margin-top {
+  margin-top: 9rem !important;
 }
