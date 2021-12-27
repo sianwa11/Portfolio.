@@ -20,8 +20,8 @@ body {
 
 .heading-profile {
   align-self: center;
-  height: 15.5rem;
-  width: 15.5rem;
+  height: 8rem;
+  width: 8rem;
   border-radius: 50%;
   margin-bottom: 3rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
@@ -295,21 +295,25 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 3rem;
-    left: 3rem; }
-  .header__logo {
-    height: 3.5rem; }
   .header__text-box {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, 35%);
+    transform: translate(-50%, 50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center; }
+
+.navigation {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  z-index: 100; }
+  .navigation__logo {
+    height: 3.5rem; }
 
 .section-about {
   background-color: #f7f7f7;
