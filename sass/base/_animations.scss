@@ -41,3 +41,15 @@
     transform: translate(0);
   }
 }
+
+// For purposes of being called in js
+
+.animation-left {
+  animation: moveInLeft 1s ease-out;
+}
+.animation-right {
+  animation: moveInRight 1s ease-out;
+}
+.animation-bottom {
+  animation: moveInBottom 1s ease-out;
+}
