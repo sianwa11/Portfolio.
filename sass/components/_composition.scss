@@ -4,6 +4,12 @@
   padding: 2.5rem;
   //   background: orangered;
 
+  @include respond(tab-port) {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+  }
+
   &__photo {
     width: 55%;
     border-radius: 2px;
@@ -11,20 +17,36 @@
     z-index: 10;
     transition: all 0.2s;
 
+    @include respond(tab-port) {
+      width: 33.3333333%;
+      box-shadow: 0 1rem 3rem rgba($color-black, 0.4);
+    }
+
     &--p1 {
       align-self: start;
+      @include respond(tab-port) {
+        align-self: auto;
+      }
     }
 
     &--p2 {
       align-self: end;
       // transform: translateY(-30rem);
       transform: translateX(-10rem) translateY(4rem);
+      @include respond(tab-port) {
+        align-self: auto;
+        transform: none;
+      }
     }
 
     &--p3 {
       align-self: center;
       // transform: translateY(-40rem);
       transform: translateX(-30rem) translateY(-10rem);
+      @include respond(tab-port) {
+        align-self: auto;
+        transform: none;
+      }
     }
 
     &:hover {

@@ -1,7 +1,12 @@
 .card {
   height: 38rem;
   padding: 2rem;
-  background-color: var(--color-primary-light);
+  background-image: linear-gradient(
+    to right,
+    rgba($color-primary-dark, 0.8),
+    rgba($color-primary-light, 0.8)
+  );
+  background-size: cover;
   border-radius: 4px;
   // box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.5);
@@ -14,12 +19,22 @@
   transition: all 0.1s;
   position: relative;
 
+  @include respond(tab-port) {
+    padding: 1rem;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
+  }
+
   &__photo {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
     position: absolute;
-    top: 0;
+    top: 2rem;
+
+    @include respond(tab-port) {
+      height: 5rem;
+      width: 5rem;
+    }
   }
 
   &__title {
@@ -30,6 +45,10 @@
   &__paragraph {
     position: absolute;
     top: 15rem;
+
+    @include respond(tab-port) {
+      font-size: 1.1rem !important;
+    }
   }
 
   &__link {

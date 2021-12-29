@@ -5,10 +5,14 @@
       rgba($color-primary-dark, 0.8),
       rgba($color-primary-light, 0.8)
     ),
-    url(../img/background-1.jpg);
+    url(../img/background-1.webp);
   background-size: cover;
   background-position: top;
   position: relative;
+
+  @include respond(tab-port) {
+    height: 50vh;
+  }
 
   &__text-box {
     position: absolute;

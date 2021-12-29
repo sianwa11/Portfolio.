@@ -5,6 +5,19 @@
   border-radius: 1px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.5);
   overflow: hidden;
+
+  @include respond(tab-port) {
+    width: 35rem;
+    font-size: 1.1rem !important;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
+  }
+
+  @include respond(phone) {
+    width: 15rem;
+    padding: 0.5rem;
+    font-size: 0.8rem !important;
+    box-shadow: 0 0.9rem 3rem rgba($color-black, 0.5);
+  }
 }
 
 .date {
