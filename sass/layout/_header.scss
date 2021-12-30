@@ -5,12 +5,27 @@
       rgba($color-primary-dark, 0.8),
       rgba($color-primary-light, 0.8)
     ),
-    url(../img/background-1.webp);
+    url(../img/background-small.webp);
   background-size: cover;
   background-position: top;
   position: relative;
 
-  @include respond(tab-port) {
+  // media query for screen resolution
+  @media (min-resolution: 192dpi) and (min-width: 37.5em) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-primary-dark, 0.8),
+        rgba($color-primary-light, 0.8)
+      ),
+      url(../img/background-medium.webp);
+    background-position: center;
+  }
+
+  @media (min-width: 125em) {
+    background-position: center;
+  }
+
+  @include respond(tab-land) {
     height: 50vh;
   }
 
