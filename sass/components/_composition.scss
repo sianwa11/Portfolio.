@@ -1,59 +1,71 @@
 .composition {
-  display: inline-flex;
-  flex-direction: row;
-  padding: 2.5rem;
-  //   background: orangered;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
+
+  row-gap: 2rem;
+  column-gap: 2rem;
 
   @include respond(tab-port) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 15%;
+    padding: 2rem;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
   }
 
   &__photo {
-    width: 55%;
+    width: 100%;
     border-radius: 2px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
     z-index: 10;
     transition: all 0.2s;
+    filter: brightness(70%);
 
     @include respond(tab-port) {
-      width: 33.3333333%;
+      width: 50%;
       box-shadow: 0 1rem 3rem rgba($color-black, 0.4);
     }
 
     &--p1 {
-      align-self: start;
-      @include respond(tab-port) {
+      width: 100%;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      align-self: center;
+      /*       @include respond(tab-port) {
         align-self: auto;
-      }
+      } */
     }
 
     &--p2 {
-      align-self: end;
-      // transform: translateY(-30rem);
-      transform: translateX(-10rem) translateY(4rem);
-      @include respond(tab-port) {
+      width: 200%;
+      height: 100%;
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+      align-self: flex-end;
+      /*       @include respond(tab-port) {
         align-self: auto;
         transform: none;
-      }
+      } */
     }
 
     &--p3 {
-      align-self: center;
-      // transform: translateY(-40rem);
-      transform: translateX(-30rem) translateY(-10rem);
-      @include respond(tab-port) {
+      width: 200%;
+      height: 100%;
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+      align-self: flex-start;
+      /*       @include respond(tab-port) {
         align-self: auto;
         transform: none;
-      }
+      } */
     }
 
     &:hover {
-      //   outline: 1.5rem solid var(--color-primary-dark);
-      //   transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 5px 2.5rem 4rem rgba($color-black, 0.5);
+      transform: scale(1.01) translateY(-0.5rem);
     }
   }
+
+  // &:hover &__photo:not(:hover) {
+  //   transform: scale(0.95);
+  // }
 }
