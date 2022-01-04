@@ -130,3 +130,14 @@ body {
     }
   }
 }
+
+.basiclink {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: rgb(84, 84, 206);
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+}

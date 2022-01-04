@@ -103,6 +103,13 @@ body {
   .paragraph__link:hover, .paragraph__link:active {
     text-transform: uppercase; }
 
+.basiclink:link, .basiclink:visited {
+  text-decoration: none;
+  color: #5454ce;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.2s; }
+
 .u-text-center {
   text-align: center !important; }
 
