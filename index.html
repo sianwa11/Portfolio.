@@ -20,11 +20,32 @@
     <title>Sianwa</title>
   </head>
   <body>
-    <!-- <div class="navigation">
-      <div class="navigation__logo-box">
-        <img src="img/logo-white.png" alt="Logo" class="navigation__logo" />
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__btn">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">
+        <!-- &nbsp; -->
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#about-me" class="navigation__link">About me</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#projects" class="navigation__link">Projects</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#timeline" class="navigation__link">Timeline</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Resume</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div> -->
+    </div>
     <header class="header">
       <div class="header__text-box">
         <img
@@ -44,22 +65,30 @@
 
         <div class="heading-icon">
           <span class="heading-icon__item">
-            <a href="#" class="heading-icon__link">
+            <a
+              href="https://www.linkedin.com/in/sianwa-atemi-0a7b0116b/"
+              class="heading-icon__link"
+              target="_blank"
+            >
               <i class="lab la-linkedin-in"></i>
             </a>
           </span>
           <span class="heading-icon__item">
-            <a href="#" class="heading-icon__link">
+            <a
+              href="https://github.com/sianwa11"
+              class="heading-icon__link"
+              target="_blank"
+            >
               <i class="lab la-github"></i>
             </a>
           </span>
           <span class="heading-icon__item">
-            <a href="#" class="heading-icon__link">
+            <a href="#" class="heading-icon__link" target="_blank">
               <i class="lab la-discord"></i>
             </a>
           </span>
           <span class="heading-icon__item">
-            <a href="#" class="heading-icon__link">
+            <a href="#" class="heading-icon__link" target="_blank">
               <i class="lab la-twitter"></i>
             </a>
           </span>
@@ -68,22 +97,26 @@
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about-me">
         <div class="row">
           <div class="col-1-of-2">
             <h3 class="heading-tertiary u-margin-bottom-small">About me 👋</h3>
 
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos dolorum mollitia voluptates facilis, blanditiis
-              accusamus, dolorem sit delectus nobis eius quibusdam odio
-              consequuntur dolore fugiat, nihil sed officiis ullam quia!
+              Hello, I'm Sianwa Atemi from Kenya. I love to code, learn new
+              things in the process and occasionally I do some running to clear
+              my mind
             </p>
             <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos dolorum mollitia voluptates facilis, blanditiis
-              accusamus, dolorem sit delectus nobis eius quibusdam odio
-              consequuntur dolore fugiat, nihil sed officiis ullam quia!
+              For web developement I mostly use vanilla JavaScript, PHP Laravel
+              and CSS. I am currently learning React and Flutter. I also know
+              some C# and Lua, feel free to check out my
+              <a
+                href="https://github.com/sianwa11"
+                class="paragraph__link"
+                target="_blank"
+                >github profile
+              </a>
             </p>
           </div>
           <div class="col-1-of-2">
@@ -114,7 +147,7 @@
         </div>
       </section>
 
-      <section class="section-projects">
+      <section class="section-projects" id="projects">
         <h1
           class="
             heading-primary heading-primary--main
@@ -134,7 +167,10 @@
                 The project was developed mainly to learn more about the C#
                 language and Unity game engine.
               </p>
-              <a href="#" class="btn btn--black card__link"
+              <a
+                href="https://sianwa-atemi.itch.io/spacedash-2d"
+                target="_blank"
+                class="btn btn--black card__link"
                 >Visit website &rarr;</a
               >
             </div>
@@ -147,11 +183,14 @@
               <p class="paragraph paragraph--small card__paragraph">
                 This project aimed to develop a web-based information system
                 that enables qualified teachers to share educational content to
-                students in vulnerable areas and situations for free and
-                interact with them when necessary.
+                students in vulnerable areas for free and interact with them
+                when necessary.
               </p>
-              <a href="#" class="btn btn--black card__link"
-                >Visit website &rarr;</a
+              <a
+                href="https://github.com/sianwa11/Daro"
+                target="_blank"
+                class="btn btn--black card__link"
+                >Visit repository &rarr;</a
               >
             </div>
           </div>
@@ -160,7 +199,8 @@
               <img src="img/node-js.webp" alt="Node JS" class="card__photo" />
               <h1 class="heading-tertiary card__title">Gikosh</h1>
               <p class="paragraph paragraph--small card__paragraph">
-                An online marketplace for artists in Kenya
+                An online marketplace for artists in Kenya to sell and market
+                their art. It is currently in development.
               </p>
               <a href="#" class="btn btn--black card__link"
                 >Visit website &rarr;</a
@@ -170,7 +210,7 @@
         </div>
       </section>
 
-      <section class="section-timeline">
+      <section class="section-timeline" id="timeline">
         <h1
           class="
             heading-primary heading-primary--main
@@ -183,20 +223,19 @@
         <div class="timeline">
           <div id="timeline-left" class="timeline__left">
             <div class="bubble">
-              <h1 class="heading-primary">DSI @ Técnico</h1>
-              <h3 class="heading-tertiary">Research Initiation Scholarship</h3>
+              <!-- <h1 class="heading-primary">Zydii</h1> -->
+              <h3 class="heading-tertiary">Full time role</h3>
               <p class="paragraph">
-                I joined DSI (Técnico's IT services) through a schoolarship. I
-                am responsible for maintaining some projects directly linked to
-                the university, such as FenixEdu.
+                I was promoted to software engineer role at Zydii after 3 months
+                of being an intern
               </p>
             </div>
           </div>
           <div id="timeline-center" class="timeline__center"></div>
           <div id="timeline-right" class="timeline__right">
             <div class="date u-flex-start u-margin-left">
-              <span class="heading-primary heading-primary--main"
-                >April 2021</span
+              <span class="heading-secondary heading-secondary--main"
+                >October 2021</span
               >
             </div>
           </div>
@@ -205,20 +244,20 @@
         <div class="timeline">
           <div id="timeline-left" class="timeline__left">
             <div class="date u-flex-end u-margin-right">
-              <span class="heading-primary heading-primary--main"
-                >April 2021</span
+              <span class="heading-secondary heading-secondary--main"
+                >July - September 2021</span
               >
             </div>
           </div>
           <div id="timeline-center" class="timeline__center"></div>
           <div id="timeline-right" class="timeline__right">
             <div class="bubble">
-              <h1 class="heading-primary">DSI @ Técnico</h1>
-              <h3 class="heading-tertiary">Research Initiation Scholarship</h3>
+              <h1 class="heading-primary">Zydii</h1>
+              <h3 class="heading-tertiary">PHP MySQL Javascript intern</h3>
               <p class="paragraph">
-                I joined DSI (Técnico's IT services) through a schoolarship. I
-                am responsible for maintaining some projects directly linked to
-                the university, such as FenixEdu.
+                I joined Zydii as an intern for three months. I was responsible
+                for maintaining some projects and coming up with ideas to
+                improve their B2B site.
               </p>
             </div>
           </div>
@@ -227,21 +266,42 @@
         <div class="timeline">
           <div id="timeline-left" class="timeline__left">
             <div class="bubble">
-              <h1 class="heading-primary">DSI @ Técnico</h1>
-              <h3 class="heading-tertiary">Research Initiation Scholarship</h3>
+              <!-- <h1 class="heading-primary">Lea</h1> -->
+              <h3 class="heading-tertiary">Final project & learning Unity</h3>
               <p class="paragraph">
-                I joined DSI (Técnico's IT services) through a schoolarship. I
-                am responsible for maintaining some projects directly linked to
-                the university, such as FenixEdu.
+                Made my first game in Unity and completed my final University
+                project and full documentation.
               </p>
             </div>
           </div>
           <div id="timeline-center" class="timeline__center"></div>
           <div id="timeline-right" class="timeline__right">
             <div class="date u-flex-start u-margin-left">
-              <span class="heading-primary heading-primary--main"
-                >April 2021</span
+              <span class="heading-secondary heading-secondary--main"
+                >January - November 2020</span
               >
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div id="timeline-left" class="timeline__left">
+            <div class="date u-flex-end u-margin-right">
+              <span class="heading-secondary heading-secondary--main"
+                >July - September 2021</span
+              >
+            </div>
+          </div>
+          <div id="timeline-center" class="timeline__center"></div>
+          <div id="timeline-right" class="timeline__right">
+            <div class="bubble">
+              <h1 class="heading-primary">Zydii</h1>
+              <h3 class="heading-tertiary">PHP MySQL Javascript intern</h3>
+              <p class="paragraph">
+                I joined Zydii as an intern for three months. I was responsible
+                for maintaining some projects and coming up with ideas to
+                improve their B2B site.
+              </p>
             </div>
           </div>
         </div>
@@ -253,10 +313,20 @@
         <div class="footer__navigation">
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="#" class="footer__link">Linkedin</a>
+              <a
+                href="https://www.linkedin.com/in/sianwa-atemi-0a7b0116b/"
+                class="footer__link"
+                target="_blank"
+                >Linkedin</a
+              >
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Github</a>
+              <a
+                href="https://github.com/sianwa11"
+                class="footer__link"
+                target="_blank"
+                >Github</a
+              >
             </li>
             <li class="footer__item">
               <a href="#" class="footer__link">Discord</a>
@@ -266,13 +336,13 @@
         <div class="footer__sitemap">
           <ul class="footer__list">
             <li class="footer__item">
-              <a href="#" class="footer__link">About me</a>
+              <a href="#about-me" class="footer__link">About me</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Projects</a>
+              <a href="#projects" class="footer__link">Projects</a>
             </li>
             <li class="footer__item">
-              <a href="#" class="footer__link">Timeline</a>
+              <a href="#timeline" class="footer__link">Timeline</a>
             </li>
           </ul>
         </div>
